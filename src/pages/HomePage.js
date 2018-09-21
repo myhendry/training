@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import { MyContext } from "../context/MyProvider";
 import Header from "../components/Header";
@@ -18,6 +19,9 @@ class HomePage extends Component {
                 <button type="button" onClick={context.setConnection}>
                   Toggle Connection
                 </button>
+                <div>
+                  <Link to={"/remote"}>Go to Remote</Link>
+                </div>
               </div>
               <Footer author="Hendry" />
             </div>

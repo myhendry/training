@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import MyProvider from "./context/MyProvider";
 
@@ -9,7 +10,12 @@ class App extends Component {
   render() {
     return (
       <MyProvider>
-        <HomePage />
+        <BrowserRouter>
+          <div>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/remote" component={RemotePage} />
+          </div>
+        </BrowserRouter>
       </MyProvider>
     );
   }

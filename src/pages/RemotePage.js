@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 class RemotePage extends Component {
   state = {
     users: []
@@ -28,6 +28,9 @@ class RemotePage extends Component {
             </p>
           </div>
         ))}
+        <div>
+          <Link to={"/"}>Go to Home</Link>
+        </div>
       </div>
     );
   }
