@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <MyProvider>
-        <RemotePage />
+        <HomePage />
       </MyProvider>
     );
   }

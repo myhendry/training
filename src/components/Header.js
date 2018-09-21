@@ -13,14 +13,25 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ display: "flex", height: 80, backgroundColor: "teal", alignItems: 'center', justifyContent: 'center' }}>
         <div>
-          <p>{this.state.isActive.toString()}</p>
+          <p
+            style={{
+              color: "white",
+              fontSize: 50,
+              fontWeight: "bold",
+              fontStyle: "italic"
+            }}
+          >
+            {this.props.company}
+          </p>
+        </div>
+        <div>
           <button type="button" onClick={this._toggleActive}>
             Toggle
           </button>
+          <p>{this.state.isActive.toString()}</p>
         </div>
-        <p>{this.props.company}</p>
       </div>
     );
   }
