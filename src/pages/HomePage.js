@@ -7,9 +7,9 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header company="Bulbtech" />
         <p>HomePage</p>
-        <Footer />
+        <Footer author="Hendry" />
       </div>
     );
   }
